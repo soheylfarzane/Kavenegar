@@ -1,15 +1,23 @@
 # Kavenegar SMS Laravel Package
 
-This package allows you to send SMS messages using the Kaveh Negar API in Laravel.
+این پکیج به شما امکان می‌دهد تا پیامک‌های متنی را با استفاده از API کاوه نگار در لاراول ارسال کنید.
 
-## Installation
+## نصب
 
-1. Run `composer require kavenegar/kavenegar-sms`.
-2. Publish the config file: `php artisan vendor:publish --provider="Kavenegar\KavenegarSms\KavenegarSmsServiceProvider"`.
+1. برای نصب پکیج، دستور زیر را اجرا کنید:
+    ```bash
+    composer require kavenegar/kavenegar-sms
+    ```
+2. فایل تنظیمات را با استفاده از دستور زیر منتشر کنید:
+    ```bash
+    php artisan vendor:publish --provider="Kavenegar\KavenegarSms\KavenegarSmsServiceProvider"
+    ```
 
-## Usage
+## استفاده
 
-To send an SMS:
+### ارسال پیامک
+
+برای ارسال پیامک، از متد `sendSms` استفاده کنید:
 
 ```php
 use Kavenegar\KavenegarSms\KavenegarSms;

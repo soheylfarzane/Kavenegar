@@ -26,5 +26,6 @@ class KavenegarSmsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/kavenegar.php' => config_path('kavenegar.php'),
         ]);
+        $this->loadMigrationsFrom(__DIR__ . '/migrations');
     }
 }
