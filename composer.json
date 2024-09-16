@@ -1,0 +1,29 @@
+﻿{
+    "name": "kavenegar/kavenegar-sms",
+    "description": "A Laravel package for sending SMS using the Kaveh Negar API",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Soheyl Farzane",
+            "email": "soheyl@storyyar.ir"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kavenegar\\KavenegarSms\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kavenegar\\KavenegarSms\\KavenegarSmsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
